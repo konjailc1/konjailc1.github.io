@@ -94,176 +94,176 @@ const PROJECTS = [
 /* Every sentence on the page. Keys map to { vi, en }. */
 const I18N = {
   "meta.title": {
-    vi: "Quang Do Hong — Tự động hóa và dữ liệu bằng Python",
-    en: "Quang Do Hong — Python automation and data"
+    vi: "Data Automation & Web Scraping | Python | AI",
+    en: "Data Automation & Web Scraping | Python | AI"
   },
   "meta.description": {
-    vi: "Freelancer Python cho doanh nghiệp nhỏ. Tôi thu thập dữ liệu web, làm sạch bảng tính, làm báo cáo Excel, đọc hóa đơn PDF và điền thông tin còn thiếu.",
-    en: "Python freelancer for small businesses. I collect web data, clean spreadsheets, build Excel reports, read PDF invoices, and fill in missing details."
+    vi: "Lập trình Python, hỗ trợ lấy dữ liệu từ web, làm sạch dữ liệu, làm báo cáo Excel tự động, đọc hoá đơn PDF và chuẩn hoá dữ liệu bằng AI.",
+    en: "Python coding for web data scraping, data cleaning, automated Excel reports, PDF invoice extraction and AI data standardization."
   },
   "skip": {
-    vi: "Chuyển tới nội dung",
-    en: "Skip to content"
+    vi: "Chuyển tiếp",
+    en: "Skip to main content"
   },
   "nav.label": {
-    vi: "Các mục trên trang",
+    vi: "Mục lục trang",
     en: "Page sections"
   },
   "nav.services": { vi: "Dịch vụ", en: "Services" },
   "nav.projects": { vi: "Dự án", en: "Projects" },
-  "nav.process": { vi: "Cách làm việc", en: "How I work" },
+  "nav.process": { vi: "Quy trình", en: "How I work" },
   "nav.contact": { vi: "Liên hệ", en: "Contact" },
   "lang.group": { vi: "Ngôn ngữ", en: "Language" },
   "lang.now": { vi: "Tiếng Việt", en: "English" },
   "hero.pitch": {
-    vi: "Freelancer tự động hóa và dữ liệu bằng Python: thu thập dữ liệu web, làm sạch dữ liệu, báo cáo Excel, trích xuất PDF, bổ sung dữ liệu bằng AI.",
-    en: "Python automation & data freelancer: web scraping, data cleaning, Excel reports, PDF extraction, AI data enrichment"
+    vi: "Hỗ trợ tự động hoá những việc dữ liệu lặp lại bằng Python: lấy dữ liệu từ web, làm sạch dữ liệu, làm báo cáo Excel, đọc hoá đơn PDF và chuẩn hoá dữ liệu bằng AI.",
+    en: "I help automate repetitive data work with Python: web scraping, data cleaning, Excel reports, PDF invoice extraction and AI data standardization."
   },
   "hero.photoAlt": {
-    vi: "Ảnh của Quang Do Hong",
-    en: "Photo of Quang Do Hong"
+    vi: "Ảnh của Quang",
+    en: "Photo of Quang"
   },
   "services.title": { vi: "Dịch vụ", en: "Services" },
   "services.lead": {
-    vi: "Những việc dữ liệu lặp lại mà tôi có thể làm thay bạn.",
-    en: "Repetitive data work I can take off your week."
+    vi: "Những việc dữ liệu tốn thời gian, công sức",
+    en: "Data tasks that take time and effort"
   },
-  "service.scrape.title": { vi: "Thu thập dữ liệu web", en: "Web data scraping" },
+  "service.scrape.title": { vi: "Web data scraping - Cào data", en: "Web data scraping" },
   "service.scrape.text": {
-    vi: "Tôi lấy giá, danh sách sản phẩm hoặc tiêu đề tin từ trang web công khai và lưu vào Excel, để bạn không phải chép tay.",
-    en: "I collect public prices, product lists, or headlines from a website and save them in Excel, so you do not have to copy them by hand."
+    vi: "Tôi lấy giá, danh sách sản phẩm hay tin tức từ các trang web công khai về file Excel.",
+    en: "I collect prices, product lists or news from public websites into Excel."
   },
   "service.clean.title": { vi: "Làm sạch dữ liệu", en: "Data cleaning" },
   "service.clean.text": {
-    vi: "Tôi biến bảng tính lộn xộn thành một bảng sạch. Tên, ngày, số điện thoại và số tiền đang ghi mỗi nơi một kiểu sẽ về cùng một dạng.",
-    en: "I turn a messy spreadsheet into one clean table. Names, dates, phone numbers, and amounts that were typed in different ways all follow the same format."
+    vi: "Tên, ngày tháng, số điện thoại, số tiền lộn xộn? Tôi gom hết về một bảng gọn gàng, thống nhất một định dạng.",
+    en: "Messy names, dates, phone numbers or amounts? I bring them into one tidy table with a single, consistent format."
   },
-  "service.excel.title": { vi: "Tự động báo cáo Excel", en: "Excel report automation" },
+  "service.excel.title": { vi: "Báo cáo Excel tự động", en: "Automated Excel reports" },
   "service.excel.text": {
-    vi: "Tôi biến file bán hàng thô thành báo cáo Excel gửi được ngay, có số tổng, biểu đồ và một đoạn tóm tắt ngắn.",
-    en: "I turn a raw sales file into an Excel report ready to share, with totals, charts, and a short written summary."
+    vi: "Từ file dữ liệu gốc, tôi biến thành báo cáo Excel có số tổng, biểu đồ và nhận xét, mở ra là hiểu ngay.",
+    en: "I turn raw data files into Excel reports with totals, charts and comments that make sense at a glance."
   },
-  "service.pdf.title": { vi: "Trích xuất hóa đơn PDF", en: "PDF invoice extraction" },
+  "service.pdf.title": { vi: "Trích xuất nội dung từ hoá đơn", en: "Invoice data extraction" },
   "service.pdf.text": {
-    vi: "Tôi đọc hóa đơn PDF, đưa các số liệu chính vào Excel, và đánh dấu tổng tiền hoặc mã số thuế nào không khớp.",
-    en: "I read invoice PDFs, put the key figures into Excel, and mark any total or tax code that does not add up."
+    vi: "Tôi đọc hoá đơn PDF, đưa số liệu vào Excel và đánh dấu sẵn hoá đơn nào bị lệch tổng tiền hoặc mã số thuế.",
+    en: "I read PDF invoices, put the figures into Excel, and flag any invoice whose total or tax code doesn't match."
   },
-  "service.ai.title": { vi: "Bổ sung dữ liệu bằng AI", en: "AI data enrichment" },
+  "service.ai.title": { vi: "Chuẩn hoá dữ liệu bằng AI", en: "AI data enrichment" },
   "service.ai.text": {
-    vi: "Tôi điền tên sản phẩm, địa chỉ và sắc thái nhận xét của khách, rồi giao một file Excel. Chỗ nào chưa chắc được đánh dấu để người kiểm tra.",
-    en: "I fill in product names, addresses, and the tone of customer comments, then give you an Excel file where anything unsure is marked for a person to check."
+    vi: "AI hỗ trợ điền tên sản phẩm chuẩn, chỉnh sửa địa chỉ và đọc review của khách hàng. Dòng nào AI chưa chắc sẽ được đánh dấu để người dùng kiểm tra lại.",
+    en: "AI helps fill in standard product names, fix addresses and read customer reviews. Anything the AI isn't sure about is flagged for a person to double-check."
   },
   "projects.title": { vi: "Dự án", en: "Projects" },
   "projects.lead": {
-    vi: "Sáu công cụ đã làm xong. Bạn xem mã nguồn của từng công cụ, và dùng thử nếu có bản demo.",
-    en: "Six finished tools. Open the code for any of them, and try the live demo where there is one."
+    vi: "6 công cụ tôi đã làm để phục vụ công việc, xem demo dưới đây.",
+    en: "Six tools I've built for real work. See the demos below."
   },
   "project.ai-data-enrichment.title": {
-    vi: "Bổ sung dữ liệu bằng AI",
+    vi: "Chuẩn hoá dữ liệu bằng AI",
     en: "AI data enrichment"
   },
   "project.ai-data-enrichment.summary": {
-    vi: "Bảng tính cửa hàng lộn xộn thành một file Excel sạch: giá và số điện thoại được chỉnh lại, tên sản phẩm, địa chỉ và sắc thái nhận xét của khách được điền thêm.",
-    en: "A messy shop spreadsheet becomes a clean Excel file, with prices and phone numbers tidied and product names, addresses, and the tone of customer comments filled in."
+    vi: "Đưa vào bảng tính bán hàng ghi lộn xộn, nhận về file Excel sạch: giá cả và số điện thoại được chuẩn lại, tên sản phẩm, địa chỉ và bình luận của khách hàng được AI ghi chú rõ.",
+    en: "Upload a messy sales spreadsheet and get back a clean Excel file: prices and phone numbers standardized, with clear AI notes on product names, addresses and customer comments."
   },
   "project.ai-data-enrichment.alt": {
-    vi: "Dữ liệu cửa hàng mẫu trong bản demo, các dòng đã làm sạch và số dòng vẫn cần người kiểm tra.",
-    en: "Sample shop data in the enrichment demo, with cleaned rows and a count of rows that still need a person to check."
+    vi: "Giao diện bản demo với dữ liệu mẫu, các dòng đã chuẩn hoá nhưng vẫn cần rà soát tính đúng/sai.",
+    en: "Demo screen with sample data: cleaned rows that still need a final accuracy check."
   },
   "project.invoice-pdf-extractor.title": {
-    vi: "Trích xuất hóa đơn PDF",
+    vi: "Trích xuất hoá đơn PDF",
     en: "PDF invoice extraction"
   },
   "project.invoice-pdf-extractor.summary": {
-    vi: "Một thư mục hóa đơn PDF thành một file Excel, hóa đơn nào có tổng tiền, thuế hoặc số tiền bằng chữ không khớp thì được đánh dấu để kiểm tra.",
-    en: "A folder of PDF invoices becomes one Excel file, and any invoice whose total, tax, or amount in words does not match is marked for review."
+    vi: "Tất cả hoá đơn PDF trong thư mục được gom vào một file Excel. Hoá đơn nào lệch tổng tiền, thuế hoặc số tiền bằng chữ sẽ được đánh dấu để kiểm tra.",
+    en: "Every PDF invoice in a folder goes into one Excel file. Any invoice with a mismatched total, tax or amount in words is flagged for checking."
   },
   "project.invoice-pdf-extractor.alt": {
-    vi: "File Excel các hóa đơn lấy từ PDF, dòng lỗi được đánh dấu và lý do được ghi rõ.",
-    en: "Excel workbook of invoices pulled from PDFs, with problem rows marked and the reasons listed."
+    vi: "File Excel tổng hợp hoá đơn từ PDF, các dòng lỗi được đánh dấu kèm lý do.",
+    en: "Excel summary of invoices pulled from PDFs, with problem rows flagged and the reason noted."
   },
   "project.excel-report-automation.title": {
-    vi: "Tự động báo cáo Excel",
-    en: "Excel report automation"
+    vi: "Báo cáo Excel tự động",
+    en: "Automated Excel reports"
   },
   "project.excel-report-automation.summary": {
-    vi: "Danh sách bán hàng thô thành báo cáo Excel theo tuần, có số tổng, so với tuần trước, bảng tách nhóm, biểu đồ và một đoạn nhận xét bằng tiếng Việt và tiếng Anh.",
-    en: "A flat sales list becomes a weekly Excel report with totals, a comparison to the week before, breakdowns, charts, and a short comment in Vietnamese and English."
+    vi: "Từ dữ liệu thô, mỗi tuần tự ra một báo cáo Excel: số tổng, so sánh với tuần trước, bảng chia theo nhóm, biểu đồ và nhận xét song ngữ Việt – Anh.",
+    en: "Turns raw data into a weekly Excel report: totals, week-over-week comparison, breakdowns by group, charts and comments in Vietnamese and English."
   },
   "project.excel-report-automation.alt": {
-    vi: "Báo cáo bán hàng theo tuần trong Excel, có số tổng, các vùng và nhận xét bằng tiếng Việt và tiếng Anh.",
-    en: "Weekly sales report in Excel with headline totals, regions, and comments in Vietnamese and English."
+    vi: "Báo cáo tuần trên Excel với các số tổng, số liệu theo vùng và nhận xét.",
+    en: "Weekly Excel report with totals, regional figures and comments."
   },
   "project.data-cleaning-toolkit.title": {
     vi: "Làm sạch dữ liệu",
     en: "Data cleaning"
   },
   "project.data-cleaning-toolkit.summary": {
-    vi: "Đơn hàng ghi mỗi nơi một kiểu, từ tên, ngày, số tiền, thành phố, số điện thoại đến dòng bị trùng, thành một bảng sạch kèm ghi chú ngắn về từng thay đổi.",
-    en: "Orders typed in different ways, including names, dates, amounts, cities, phone numbers, and duplicate rows, become one clean table plus a short note of every change."
+    vi: "Dữ liệu lộn xộn (tên, ngày, số tiền, thành phố, số điện thoại, dòng trùng) được gom về một bảng sạch, kèm ghi chú rõ từng chỗ đã sửa.",
+    en: "Messy data (names, dates, amounts, cities, phone numbers, duplicate rows) ends up in one clean table, with a clear note on every fix."
   },
   "project.news-scraper.title": {
-    vi: "Tiêu đề tin chứng khoán",
-    en: "Stock news headlines"
+    vi: "Tổng hợp tin tức chứng khoán",
+    en: "Stock news collector"
   },
   "project.news-scraper.summary": {
-    vi: "Tiêu đề trên trang chứng khoán CafeF được lưu vào Excel, gồm tiêu đề, đường dẫn, thời gian và đoạn tóm tắt ngắn, không chép nguyên bài viết.",
-    en: "Headlines from the CafeF stock-market page are saved to Excel with the title, link, time, and a short summary, without copying the full articles."
+    vi: "Tự động lấy tin chứng khoán trên các trang báo chính thống về file Excel, gồm tiêu đề, đường link, thời gian đăng và tóm tắt ngắn, không chép nguyên bài.",
+    en: "Automatically collects stock-market news from mainstream news sites into Excel: title, link, publish time and a short summary, without copying full articles."
   },
   "project.mykingdom-price-scraper.title": {
-    vi: "Bảng giá MyKingdom",
-    en: "MyKingdom price list"
+    vi: "Theo dõi giá hàng hoá của cửa hàng đồ chơi MyKingdom",
+    en: "MyKingdom toy store price tracker"
   },
   "project.mykingdom-price-scraper.summary": {
-    vi: "Giá đồ chơi, mức giảm và tình trạng còn hàng công khai trên MyKingdom được lưu vào Excel, để bạn đối chiếu với file lần sau.",
-    en: "Public toy prices, discounts, and stock from the MyKingdom shop are saved to Excel, ready to compare with the next file you collect."
+    vi: "Lấy giá đồ chơi, mức giảm giá và tình trạng còn/hết hàng trên trang web của MyKingdom về Excel, tiện so sánh giữa các lần cập nhật.",
+    en: "Collects toy prices, discounts and in-stock/out-of-stock status from the MyKingdom website into Excel, for easy comparison between updates."
   },
-  "process.title": { vi: "Cách làm việc", en: "How I work" },
+  "process.title": { vi: "Quy trình làm việc", en: "How I work" },
   "process.lead": {
-    vi: "Ba bước, từ một mẫu dữ liệu của bạn đến công cụ bạn tự chạy được.",
-    en: "Three steps, from a sample of your data to a tool you can run."
+    vi: "Chỉ 3 bước, từ file mẫu của bạn đến công cụ bạn tự chạy được.",
+    en: "Three simple steps, from your sample file to a tool you can run yourself."
   },
   "step.1.title": {
-    vi: "Bạn gửi một mẫu dữ liệu",
-    en: "You send a sample of your data"
+    vi: "Bạn gửi dữ liệu mẫu",
+    en: "You send a sample"
   },
   "step.1.text": {
-    vi: "Một bảng tính, vài file PDF, hoặc đường dẫn một trang công khai là đủ.",
-    en: "A spreadsheet, a few PDFs, or a link to a public page is enough."
+    vi: "Chỉ cần một bảng tính, vài file PDF hoặc link trang web cần lấy dữ liệu.",
+    en: "A spreadsheet, a few PDFs or a link to the website is all I need."
   },
   "step.2.title": {
-    vi: "Tôi làm một bản chạy thử",
-    en: "I build a working demo"
+    vi: "Tôi làm bản chạy thử",
+    en: "I build a quick demo"
   },
   "step.2.text": {
-    vi: "Bạn xem kết quả trên chính mẫu của mình trước khi công cụ được hoàn tất.",
-    en: "You see the result on your own sample before the tool is finished."
+    vi: "Bạn xem kết quả ngay trên dữ liệu của bạn và góp ý trước khi tôi hoàn thiện.",
+    en: "You see the results on your own data and give feedback before I finish it."
   },
   "step.3.title": {
-    vi: "Tôi giao công cụ hoàn chỉnh, kèm hướng dẫn và hỗ trợ",
-    en: "I deliver the final tool with instructions and support"
+    vi: "Tôi bàn giao và hỗ trợ",
+    en: "I deliver and support"
   },
   "step.3.text": {
-    vi: "Bạn nhận công cụ hoàn chỉnh, hướng dẫn dễ hiểu, và được hỗ trợ nếu cần chỉnh.",
-    en: "You get the finished tool, plain instructions, and help if a change is needed."
+    vi: "Bạn nhận công cụ hoàn chỉnh kèm hướng dẫn dễ hiểu. Cần chỉnh gì, tôi hỗ trợ tiếp.",
+    en: "You get the finished tool with easy instructions, and I'm here if anything needs tweaking."
   },
   "contact.title": { vi: "Liên hệ", en: "Contact" },
   "contact.lead": {
-    vi: "Nếu một việc dữ liệu cứ lặp lại, hãy bắt đầu bằng một file mẫu.",
-    en: "If a data task keeps coming back, start with a sample of your file."
+    vi: "Có việc dữ liệu nào cứ lặp lại? Gửi tôi một file mẫu, tôi xem giúp nhé.",
+    en: "Got a data task that keeps eating your time? Send me a sample file and I'll take a look."
   },
   "link.linkedin": { vi: "LinkedIn", en: "LinkedIn" },
   "link.upwork": { vi: "Upwork", en: "Upwork" },
   "link.vlance": { vi: "vLance", en: "vLance" },
   "link.github": { vi: "GitHub", en: "GitHub" },
   "link.email": { vi: "Email", en: "Email" },
-  "link.code": { vi: "Mã nguồn", en: "Code" },
-  "link.demo": { vi: "Dùng thử", en: "Live demo" },
-  "link.newTab": { vi: "mở trong thẻ mới", en: "opens in a new tab" },
+  "link.code": { vi: "Xem code", en: "View code" },
+  "link.demo": { vi: "Chạy thử", en: "Live demo" },
+  "link.newTab": { vi: "mở tab mới", en: "opens in a new tab" },
   "footer.copy": { vi: "© 2026 {name}", en: "© 2026 {name}" },
   "footer.note": {
-    vi: "Làm bằng HTML và CSS, lưu trên GitHub Pages",
-    en: "Built with HTML & CSS, hosted on GitHub Pages"
+    vi: "Được làm bằng HTML, CSS và chạy trên GitHub Pages",
+    en: "Built with HTML & CSS · Hosted on GitHub Pages"
   }
 };
 
