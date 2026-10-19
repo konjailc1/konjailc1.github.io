@@ -1,0 +1,16 @@
+# Operating system
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local Cursor files
+.cursor/
