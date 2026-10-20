@@ -61,9 +61,9 @@ const PROJECTS = [
   },
   {
     id: "data-cleaning-toolkit",
-    image: "",
-    width: 0,
-    height: 0,
+    image: "assets/img/data-cleaning-toolkit.png",
+    width: 1280,
+    height: 800,
     icon: "table",
     repo: "https://github.com/konjailc1/data-cleaning-toolkit",
     demo: "",
@@ -71,9 +71,9 @@ const PROJECTS = [
   },
   {
     id: "news-scraper",
-    image: "",
-    width: 0,
-    height: 0,
+    image: "assets/img/news-scraper.png",
+    width: 1280,
+    height: 800,
     icon: "news",
     repo: "https://github.com/konjailc1/news-scraper",
     demo: "",
@@ -81,9 +81,9 @@ const PROJECTS = [
   },
   {
     id: "mykingdom-price-scraper",
-    image: "",
-    width: 0,
-    height: 0,
+    image: "assets/img/mykingdom-price-scraper.png",
+    width: 1280,
+    height: 800,
     icon: "tag",
     repo: "https://github.com/konjailc1/mykingdom-price-scraper",
     demo: "",
@@ -202,6 +202,10 @@ const I18N = {
     vi: "Dữ liệu lộn xộn (tên, ngày, số tiền, thành phố, số điện thoại, dòng trùng) được gom về một bảng sạch, kèm ghi chú rõ từng chỗ đã sửa.",
     en: "Messy data (names, dates, amounts, cities, phone numbers, duplicate rows) ends up in one clean table, with a clear note on every fix."
   },
+  "project.data-cleaning-toolkit.alt": {
+    vi: "10 đơn hàng mẫu trước và sau khi làm sạch: tên, điện thoại, thành phố, ngày và số tiền.",
+    en: "First 10 sample orders before and after cleaning: name, phone, city, date and amount."
+  },
   "project.news-scraper.title": {
     vi: "Tổng hợp tin tức chứng khoán",
     en: "Stock news collector"
@@ -210,6 +214,10 @@ const I18N = {
     vi: "Tự động lấy tin chứng khoán trên các trang báo chính thống về file Excel, gồm tiêu đề, đường link, thời gian đăng và tóm tắt ngắn, không chép nguyên bài.",
     en: "Automatically collects stock-market news from mainstream news sites into Excel: title, link, publish time and a short summary, without copying full articles."
   },
+  "project.news-scraper.alt": {
+    vi: "8 tin chứng khoán mới nhất, kèm thời gian đăng và tóm tắt ngắn.",
+    en: "Eight latest stock-market headlines with publish time and a short summary."
+  },
   "project.mykingdom-price-scraper.title": {
     vi: "Theo dõi giá hàng hoá của cửa hàng đồ chơi MyKingdom",
     en: "MyKingdom toy store price tracker"
@@ -217,6 +225,10 @@ const I18N = {
   "project.mykingdom-price-scraper.summary": {
     vi: "Lấy giá đồ chơi, mức giảm giá và tình trạng còn/hết hàng trên trang web của MyKingdom về Excel, tiện so sánh giữa các lần cập nhật.",
     en: "Collects toy prices, discounts and in-stock/out-of-stock status from the MyKingdom website into Excel, for easy comparison between updates."
+  },
+  "project.mykingdom-price-scraper.alt": {
+    vi: "10 sản phẩm MyKingdom: giá, giá gốc, mức giảm và tình trạng còn hàng.",
+    en: "First 10 MyKingdom products with price, original price, discount and stock."
   },
   "process.title": { vi: "Quy trình làm việc", en: "How I work" },
   "process.lead": {
