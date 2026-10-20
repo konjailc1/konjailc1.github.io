@@ -465,6 +465,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-height: 44px;
   padding: 0.45rem 1rem;
   border-radius: 999px;
@@ -490,6 +491,15 @@ h1 {
 .btn-primary:hover {
   background: var(--navy-dark);
   border-color: var(--navy-dark);
+}
+
+.btn-logo {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  display: block;
+  fill: currentColor;
+  stroke: none;
 }
 
 .steps {

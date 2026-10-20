@@ -11,8 +11,8 @@ const CONFIG = {
   /* File under assets/img/. Leave "" to show the initials QD. */
   avatar: "",
   links: {
-    linkedin: "",
-    upwork: "",
+    linkedin: "https://www.linkedin.com/in/kwangdo/",
+    upwork: "https://www.upwork.com/freelancers/~01f05eba4d7af55aab",
     vlance: "",
     github: "https://github.com/konjailc1",
     email: { user: "", domain: "" }
@@ -358,6 +358,32 @@ function svgIcon(kind) {
   return svg;
 }
 
+/* Filled brand marks for contact buttons. fill comes from CSS (currentColor). */
+const BRAND_ICONS = {
+  linkedin: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z",
+  upwork: "M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.142-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.466 0-3.014-2.439-5.461-5.439-5.461z",
+  vlance: "M2.8 5h5.1L12 15.6 16.1 5h5.1L14.2 20h-4.4L2.8 5z",
+  github: "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12",
+  email: "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+};
+
+function brandIcon(kind) {
+  const d = Object.prototype.hasOwnProperty.call(BRAND_ICONS, kind) ? BRAND_ICONS[kind] : "";
+  if (!d) return null;
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("class", "btn-logo");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("width", "18");
+  svg.setAttribute("height", "18");
+  svg.setAttribute("aria-hidden", "true");
+  svg.setAttribute("focusable", "false");
+  const path = document.createElementNS(SVG_NS, "path");
+  path.setAttribute("d", d);
+  path.setAttribute("fill-rule", "evenodd");
+  svg.appendChild(path);
+  return svg;
+}
+
 function textLink(href, label, className, lang, newTab) {
   const a = document.createElement("a");
   a.className = className;
@@ -374,27 +400,48 @@ function textLink(href, label, className, lang, newTab) {
   return a;
 }
 
+function contactLink(item, lang) {
+  const a = document.createElement("a");
+  a.className = "btn btn-primary";
+  a.href = item.href;
+  const icon = brandIcon(item.icon);
+  if (icon) a.appendChild(icon);
+  const label = document.createElement("span");
+  label.textContent = item.label;
+  a.appendChild(label);
+  if (item.newTab && isHttps(item.href)) {
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    const hint = document.createElement("span");
+    hint.className = "visually-hidden";
+    hint.textContent = " (" + t("link.newTab", lang) + ")";
+    a.appendChild(hint);
+  }
+  return a;
+}
+
 function contactItems(lang) {
   const links = CONFIG.links || {};
   const specs = [
-    ["link.linkedin", links.linkedin, true],
-    ["link.upwork", links.upwork, true],
-    ["link.vlance", links.vlance, true],
-    ["link.github", links.github, true],
-    ["link.email", mailtoFrom(links.email), false]
+    ["linkedin", "link.linkedin", links.linkedin, true],
+    ["upwork", "link.upwork", links.upwork, true],
+    ["vlance", "link.vlance", links.vlance, true],
+    ["github", "link.github", links.github, true],
+    ["email", "link.email", mailtoFrom(links.email), false]
   ];
   const items = [];
   specs.forEach(function (spec) {
-    const href = spec[1];
-    const external = spec[2];
+    const href = spec[2];
+    const external = spec[3];
     if (external) {
       if (!isHttps(href)) return;
     } else if (typeof href !== "string" || href.indexOf("mailto:") !== 0) {
       return;
     }
     items.push({
+      icon: spec[0],
       href: href,
-      label: t(spec[0], lang),
+      label: t(spec[1], lang),
       newTab: external
     });
   });
@@ -405,9 +452,8 @@ function renderContacts(lang) {
   const items = contactItems(lang);
   document.querySelectorAll("[data-contact-list]").forEach(function (list) {
     const fragment = document.createDocumentFragment();
-    items.forEach(function (item, index) {
-      const className = index === 0 ? "btn btn-primary" : "btn";
-      fragment.appendChild(textLink(item.href, item.label, className, lang, item.newTab));
+    items.forEach(function (item) {
+      fragment.appendChild(contactLink(item, lang));
     });
     clearNode(list);
     list.appendChild(fragment);
